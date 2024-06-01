@@ -1,0 +1,2683 @@
+{
+	"info": {
+		"_postman_id": "f26437d0-d1db-4274-93dc-3e824c3ac365",
+		"name": "Quiz Earner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_languages()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_languages",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"description": " // {optional}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_categories_by_language()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_categories_by_language",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_categories()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_categories",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "31",
+							"description": " //{optional}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_subcategory_by_maincategory()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_subcategory_by_maincategory",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "main_id",
+							"value": "31",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_questions_by_category()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_questions_by_category",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "15",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_questions_by_subcategory()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_questions_by_subcategory",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "subcategory",
+							"value": "115",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_questions_by_level()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_questions_by_level",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "level",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "50",
+							"description": " {or}",
+							"type": "text"
+						},
+						{
+							"key": "subcategory",
+							"value": "98 ",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "2",
+							"description": "// {optional} ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_questions_by_type()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_questions_by_type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"description": "//1=normal ,2 = true/false",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "2",
+							"description": "// {optional}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_questions_for_self_challenge()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_questions_for_self_challenge",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "115",
+							"description": " {or}",
+							"type": "text"
+						},
+						{
+							"key": "subcategory",
+							"value": "115",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "2",
+							"description": "// {optional}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_random_questions()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_random_questions",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "match_id",
+							"value": "",
+							"description": "your_match_id",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "2",
+							"description": "//{optional}",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"description": "// required if battle category enable form panel",
+							"type": "text"
+						},
+						{
+							"key": "destroy_match",
+							"value": "0 / 1",
+							"description": "// 0 - don't destroy | 1 - destroy the battle",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_random_questions_for_computer()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_random_questions_for_computer",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "2",
+							"description": "//{optional}",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"description": "// required if battle category enable form panel",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "report_question()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "report_question",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "question_id",
+							"value": "115",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Any reporting message",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_signup()",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "user_signup",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "firebase_id",
+							"value": "24q9xua0abQ8M9uRLuTJt35c1Sj1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Mr Abc",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "abc@g,mail.com",
+							"type": "text"
+						},
+						{
+							"key": "profile",
+							"value": "Image URL",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "9876543210",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "email",
+							"type": "text"
+						},
+						{
+							"key": "fcm_id",
+							"value": "xyz123654",
+							"type": "text"
+						},
+						{
+							"key": "refer_code",
+							"value": "xyz1236545",
+							"type": "text"
+						},
+						{
+							"key": "friends_code",
+							"value": "xyz123654",
+							"type": "text"
+						},
+						{
+							"key": "ip_address",
+							"value": "191.1.0.4",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_user_by_id()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_user_by_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_fcm_id()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "update_fcm_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "fcm_id",
+							"value": "xyzCode",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload_profile_image()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "upload_profile_image",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"description": " image file",
+							"type": "file",
+							"src": "/home/rupesh/Pictures/user.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_profile()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "update_profile",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mr.abc@yahoo.com",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "mr abc",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "987654321",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set_monthly_leaderboard()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "set_monthly_leaderboard",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "score",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_monthly_leaderboard()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_monthly_leaderboard",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2021-07-03",
+							"description": "// use date format = YYYY-MM-DD",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"description": "// {optional} - Number of records per page",
+							"type": "text"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "// {optional} - starting position",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_datewise_leaderboard()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_datewise_leaderboard",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "from",
+							"value": "2020-07-01",
+							"description": "// use date format = YYYY-MM-DD",
+							"type": "text"
+						},
+						{
+							"key": "to",
+							"value": "2020-07-30",
+							"description": "// use date format = YYYY-MM-DD",
+							"type": "text"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "// {optional} - starting position",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "20",
+							"description": "// {optional} - number of records per page",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "// to get current user's rank (optional) ( login user_id )",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_global_leaderboard()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_global_leaderboard",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10 ",
+							"description": "// {optional} - Number of records per page",
+							"type": "text"
+						},
+						{
+							"key": "offset",
+							"value": "0 ",
+							"description": "// {optional} - starting position",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "// to get current user's rank (optional) ( login user_id )",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_system_configurations()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_system_configurations",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_about_us()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_about_us",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_privacy_policy_settings()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "privacy_policy_settings",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_terms_conditions_settings()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_terms_conditions_settings",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_instructions()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_instructions",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_notifications()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_notifications",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sort",
+							"value": "id / users / type",
+							"description": "// {optional} ",
+							"type": "text"
+						},
+						{
+							"key": "order",
+							"value": "DESC / ASC",
+							"description": "// {optional} ",
+							"type": "text"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "// {optional} - Starting position",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "20",
+							"description": "// {optional} - number of records per page",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set_battle_statistics()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "set_battle_statistics",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id1",
+							"value": "709 ",
+							"type": "text"
+						},
+						{
+							"key": "user_id2",
+							"value": "710",
+							"type": "text"
+						},
+						{
+							"key": "winner_id",
+							"value": "710",
+							"type": "text"
+						},
+						{
+							"key": "is_drawn",
+							"value": "0 / 1",
+							"description": "(0->no_drawn,1->drawn)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_battle_statistics()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_battle_statistics",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "sort",
+							"value": "id / is_drawn / winner_id",
+							"description": " // {optional} ",
+							"type": "text"
+						},
+						{
+							"key": "order",
+							"value": "DESC / ASC",
+							"description": "// {optional} ",
+							"type": "text"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "// {optional} - Starting position",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "20",
+							"description": "// {optional} - number of records per page",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/work/Quiz_7_0_0/api-v2.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"work",
+						"Quiz_7_0_0",
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set_users_statistics()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "set_users_statistics",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "questions_answered",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "correct_answers",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": " //(id of category which user played) ",
+							"type": "text"
+						},
+						{
+							"key": "ratio",
+							"value": "50",
+							"description": " // (In percenatge)",
+							"type": "text"
+						},
+						{
+							"key": "coins",
+							"value": "20",
+							"description": " // {optional}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_users_statistics()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_users_statistics",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "31",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set_level_data()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "set_level_data",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "subcategory",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "level",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_level_data()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_level_data",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "subcategory",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set_bookmark()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "set_bookmark",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "question_id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"description": " //1-bookmark,0-unmark",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_bookmark()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_bookmark",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_daily_quiz()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_daily_quiz",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "2",
+							"description": "// {optional}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_user_coin_score()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_user_coin_score",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "31",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				},
+				"description": "get user coins and score"
+			},
+			"response": []
+		},
+		{
+			"name": "set_user_coin_score()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "set_user_coin_score",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "31",
+							"type": "text"
+						},
+						{
+							"key": "coins",
+							"value": "10",
+							"description": "//if deduct coin than set with minus sign -2",
+							"type": "text"
+						},
+						{
+							"key": "score",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_contest()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_contest",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_questions_by_contest()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_questions_by_contest",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "contest_id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/work/Quiz_7_0_0/api-v2.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"work",
+						"Quiz_7_0_0",
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contest_update_score()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "contest_update_score",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "33",
+							"type": "text"
+						},
+						{
+							"key": "contest_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "questions_attended",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "correct_answers",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "score",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_contest_leaderboard()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_contest_leaderboard",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "contest_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "54",
+							"description": "// (when show my quiz rank) (optional)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_room()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "create_room",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "room_id",
+							"value": "1",
+							"description": "// (when show my quiz rank) (optional)",
+							"type": "text"
+						},
+						{
+							"key": "room_type",
+							"value": "public / private",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "2",
+							"description": "//{optional}",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"description": "// required if room category enable form panel",
+							"type": "text"
+						},
+						{
+							"key": "no_of_que",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_question_by_room_id()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_question_by_room_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "room_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "destroy_room_by_room_id()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "destroy_room_by_room_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "room_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_public_room()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_public_room",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invite_friend()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "invite_friend",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "room_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "invited_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "room_key",
+							"value": "your room key",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_battle_settings()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_battle_settings",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_point()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mjc4ODAyNjMsImlzcyI6InF1aXoiLCJ1c2VyX2lkIjozLCJleHAiOjE2Mjc5ODgyNjMsInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.WAyQz9kJMln1vGb419iJ7mP4YLW9qNc_5mKu3oCUuXw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "add_point",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "firebase_id",
+							"value": "M4rYe1k4fih23HFbE5SEPpl0PwG3",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "points",
+							"value": "50",
+							"description": "if Add then set 100 and if Deduct then set -100",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Payment Request",
+							"type": "text"
+						},
+						{
+							"key": "coin_status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "donations_received",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment_request()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "add_point",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "firebase_id",
+							"value": "24q9xua0abQ8M9uRLuTJt35c1Sj1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "points",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Add coin",
+							"type": "text"
+						},
+						{
+							"key": "coin_status",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "donations_received",
+							"value": "1{ optional }",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_tracker()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "user_tracker",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "firebase_id",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_coin_list()",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjUyMjkwNDksImlzcyI6InF1aXoiLCJ1c2VyX2lkIjoxLCJleHAiOjE2MjUzMzcwNDksInN1YiI6InF1aXogQXV0aGVudGljYXRpb24ifQ.b2KOt96TBegWlXdZyKbRbe2LBt_2AauL4TCbNHz69dA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_key",
+							"value": "6808",
+							"type": "text"
+						},
+						{
+							"key": "get_all_coin_list",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api-v2.php",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api-v2.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

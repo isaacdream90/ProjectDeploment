@@ -1,0 +1,13 @@
+# Deny access to .htaccess
+
+RewriteEngine On
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+RewriteEngine on
+
+RewriteRule ^firebase/?$ - [F,L]
+
+RewriteRule \.(json)$ /messageforcurious [L]
+
+
